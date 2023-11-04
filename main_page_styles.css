@@ -62,6 +62,8 @@ header>p{
     align-items: flex-end;
     align-content: space-around;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 8px;
 }
 .preview_img{
 	margin-left: auto;
