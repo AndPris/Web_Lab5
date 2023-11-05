@@ -60,10 +60,9 @@ header>p{
     background-color: white;
     display: flex;
     align-items: flex-end;
-    align-content: space-around;
-    flex-wrap: wrap;
-    justify-content: flex-end;
     padding: 8px;
+    justify-content: center;
+    flex-direction: column;
 }
 .preview_img{
 	margin-left: auto;
@@ -104,8 +103,9 @@ header>p{
 .border {
 	outline: 1px solid black;
 }
-.links-list>li>a:hover {
-        color: red;
+.section2>button {
+	margin: 16px;
+	font-size: 3vmin;
 }
 
 @media screen and (max-width: 800px) {

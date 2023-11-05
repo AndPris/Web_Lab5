@@ -10,6 +10,9 @@
 
 
 	<body class="body_style">
+		<script src="triangle_checker.js"></script>
+		<script src="cookies_handlers.js"></script>
+		
 		<header class="left-center">
 			<h3 id="x" class="border">Flex-верстка</h3>
 			<p id="par_1">Iron Maiden — британський рок-гурт з Лейтона, Лондон, заснований у 1975 році. Гурт вважають одними із найпопулярніших і найвагоміших виконавців у стилі хеві-метал, частиною «Нової хвилі британського важкого металу» (NWOBHM). Iron Maiden продав більше 120 мільйонів альбомів у всьому світі; три з них досягли першого місця і 15 потрапили в Тор 10 хіт-параді одної лише Британії.</p>
@@ -20,22 +23,23 @@
 			<section class="section235 border">
 				<section class="section23 border">
 					<section class="section2 item-right border">
-						<ol> Студійні альбоми:
-							<li>Iron Maiden</li>
-							<li>The Number of the Beast</li>
-							<li>Fear of the Dark</li>
-							<li>Brave New World</li>
-						</ol>
+						<button type="button" onclick="swap_1_6_text()">Поміняти місцями тексти 1 і 6</button>
+						<button type="button" onclick="calculate_rhombus_square()">Обрахувати площу ромба</button>
 					</section>
 
 					<section class="section3 border">
-						<img src="icon1.jpg" class="preview_img" alt="Iron Maiden">
-
-						<img src="icon2.jpg" class="preview_img" alt="The Number of the Beast">
-						
-						<img src="icon.jpg" class="preview_img" alt="Fear of the Dark">
-						
-						<img src="icon4.jpg" class="preview_img" alt="Brave New World">						
+						<form name="checker" onsubmit="check_triangle()">
+							<fieldset>
+								<legend>Сторони трикутника</legend>
+								<label for="a">a:</label>
+								<input type="number" id="a" name="a" min="1" required><br>
+								<label for="b">b:</label>
+								<input type="number" id="b" name="b" min="1" required><br>
+								<label for="c">c:</label>
+								<input type="number" id="c" name="c" min="1" required><br>
+								<input type="submit" value="Перевірити">
+							</fieldset>
+						</form>					
 
 					</section>
 				</section>
