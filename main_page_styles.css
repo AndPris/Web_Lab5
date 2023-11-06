@@ -115,6 +115,14 @@ header>p{
 	color: blue;
 }
 
+.even {
+	color: white;
+	background-color: black;
+}
+.odd {
+	color: black;
+	background-color: white;
+}
 @media screen and (max-width: 800px) {
 	.section235, .section4 {
 		flex: 100%;

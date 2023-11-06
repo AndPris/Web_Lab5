@@ -9,7 +9,7 @@ function delete_cookies() {
 	  }
 }
 
-window.onload = function() {
+function ask_about_cookies() {
 	let if_delete_cookies = true;
 
 	if(document.cookie != '') {
@@ -24,3 +24,5 @@ window.onload = function() {
 		document.forms.checker.style.display = "none"; 
 	}
 }
+
+window.addEventListener('load', ask_about_cookies);

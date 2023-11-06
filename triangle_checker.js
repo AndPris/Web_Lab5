@@ -23,7 +23,8 @@ function save_italic_value() {
 	localStorage.setItem('italic', form.elements.italic.checked);
 }
 
-function handle_form_input() {
+function handle_form_input(event) {
+	event.preventDefault();
 	let a, b, c;
 	[a, b, c] = get_triangle_sizes();
 	let exists = if_triangle_exists(a, b, c);
