@@ -12,7 +12,8 @@
 	<body class="body_style">
 		<script src="triangle_checker.js"></script>
 		<script src="cookies_handlers.js"></script>
-		
+		<script src="italic_handler.js"></script>
+
 		<header class="left-center">
 			<h3 id="x" class="border">Flex-верстка</h3>
 			<p id="par_1">Iron Maiden — британський рок-гурт з Лейтона, Лондон, заснований у 1975 році. Гурт вважають одними із найпопулярніших і найвагоміших виконавців у стилі хеві-метал, частиною «Нової хвилі британського важкого металу» (NWOBHM). Iron Maiden продав більше 120 мільйонів альбомів у всьому світі; три з них досягли першого місця і 15 потрапили в Тор 10 хіт-параді одної лише Британії.</p>
@@ -22,13 +23,13 @@
 		<main>
 			<section class="section235 border">
 				<section class="section23 border">
-					<section class="section2 item-right border">
+					<section class="section2 item-right border" onmouseover="set_italic()">
 						<button type="button" onclick="swap_1_6_text()">Поміняти місцями тексти 1 і 6</button>
 						<button type="button" onclick="calculate_rhombus_square()">Обрахувати площу ромба</button>
 					</section>
 
 					<section class="section3 border">
-						<form name="checker" onsubmit="check_triangle()">
+						<form name="checker" onsubmit="handle_form_input()">
 							<fieldset>
 								<legend>Сторони трикутника</legend>
 								<label for="a">a:</label>
@@ -37,8 +38,15 @@
 								<input type="number" id="b" name="b" min="1" required><br>
 								<label for="c">c:</label>
 								<input type="number" id="c" name="c" min="1" required><br>
-								<input type="submit" value="Перевірити">
 							</fieldset>
+
+							<fieldset>
+								<legend>Встановити курсив в блоці 2</legend>
+								<label for="true_italic">Так</label>
+								<input type="radio" id="true_italic" name="italic"><br>
+							</fieldset>
+							<input type="submit" value="Відправити">
+
 						</form>					
 
 					</section>
@@ -50,15 +58,16 @@
 				</section>
 			</section>
 			
-			<section class="section4 item-right border">
-				<p>Цей сайт зроблено за допомогою Flex-верстки. Здійснено адаптацію для смартфону.</p>
-				<p><a href="email_page.html">Поштова верстка</a></p>
+			<section class="section4 border">
+				<button type="button" onclick="">Додати елемент в список</button>
+				<button type="button" onclick="">Зберегти список</button>
+				<button type="button" onclick="">Видалити список</button>
 			</section>
 		</main>
 
 
 		<footer class="left-center border">
-			<h3 class="border">Лабораторна робота №3</h3>
+			<h3 class="border">Лабораторна робота №5</h3>
 			<p id="par_6"><em>Виконав Присяжний Андрій, ІП-22, всі матеріали взято з Вікіпедії. </em></p>
 		</footer>
 

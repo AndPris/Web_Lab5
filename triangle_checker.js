@@ -18,8 +18,12 @@ function write_cookies(a, b, c, exists) {
 	document.cookie = "c="+c+"; max-age="+seconds_in_hour;
 	document.cookie = "exists="+exists+"; max-age="+seconds_in_hour;
 }
+function save_italic_value() {
+	let form = document.forms.checker;
+	localStorage.setItem('italic', form.elements.italic.checked);
+}
 
-function check_triangle() {
+function handle_form_input() {
 	let a, b, c;
 	[a, b, c] = get_triangle_sizes();
 	let exists = if_triangle_exists(a, b, c);
@@ -29,5 +33,6 @@ function check_triangle() {
 		alert("Triangle doesn't exist!");
 
 	write_cookies(a, b, c, exists);
+	save_italic_value();
 }
 

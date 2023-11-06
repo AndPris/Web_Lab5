@@ -79,10 +79,12 @@ header>p{
 }
 
 .section4 {
+	display: flex;
 	padding-left: 10px;
 	flex: 25%;
 	max-width: 25%;
     background-color: rgb(253, 233, 217);
+    align-items: center;
 }
 .item-right {
 	display: flex;
