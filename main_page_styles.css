@@ -111,6 +111,9 @@ header>p{
 	cursor: pointer;
 	color: red;
 }
+#form-opener {
+	color: blue;
+}
 
 @media screen and (max-width: 800px) {
 	.section235, .section4 {

@@ -4,6 +4,6 @@ function set_italic() {
 		if(localStorage.getItem('italic') == 'true')
 			child.style.fontStyle = 'italic';
 		else
-			child.style.fontStyle = none;
+			child.style.removeProperty('font-style');
 	}
 }
