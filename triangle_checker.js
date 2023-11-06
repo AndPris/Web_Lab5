@@ -29,9 +29,9 @@ function handle_form_input(event) {
 	[a, b, c] = get_triangle_sizes();
 	let exists = if_triangle_exists(a, b, c);
 	if(exists)
-		alert("Triangle exists!");
+		alert("Трикутник існує!");
 	else
-		alert("Triangle doesn't exist!");
+		alert("Трикутника не існує!");
 
 	write_cookies(a, b, c, exists);
 	save_italic_value();

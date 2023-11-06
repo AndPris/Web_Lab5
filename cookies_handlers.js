@@ -20,7 +20,7 @@ function ask_about_cookies() {
 	if(if_delete_cookies)
 		delete_cookies();
 	else {
-		alert("Куки не видалено. Потрібно оновии сторінку.");
+		alert("Куки не видалено. Потрібно оновити сторінку.");
 		document.forms.checker.style.display = "none"; 
 	}
 }
