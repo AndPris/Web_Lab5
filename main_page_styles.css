@@ -79,12 +79,10 @@ header>p{
 }
 
 .section4 {
-	display: flex;
 	padding-left: 10px;
 	flex: 25%;
 	max-width: 25%;
     background-color: rgb(253, 233, 217);
-    align-items: center;
 }
 .item-right {
 	display: flex;
@@ -108,6 +106,10 @@ header>p{
 .section2>button {
 	margin: 16px;
 	font-size: 3vmin;
+}
+#form-opener:hover {
+	cursor: pointer;
+	color: red;
 }
 
 @media screen and (max-width: 800px) {
